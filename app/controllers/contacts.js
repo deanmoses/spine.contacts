@@ -1,4 +1,6 @@
 jQuery(function($){
+
+	// The Contacts controller is responsible for displaying and editing the details of a single contact
   window.Contacts = Spine.Controller.create({
     elements: {
       ".show": "showEl",
@@ -25,6 +27,7 @@ jQuery(function($){
     },
     
     change: function(item){
+      this.navigate("/contact", item.id);
       this.current = item;
       this.render();
     },

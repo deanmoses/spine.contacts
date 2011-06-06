@@ -224,6 +224,11 @@ textarea {
   font-weight: bold;
 }
 
+#title h1 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 #wrapper {
   position: absolute;
   left: 0;
